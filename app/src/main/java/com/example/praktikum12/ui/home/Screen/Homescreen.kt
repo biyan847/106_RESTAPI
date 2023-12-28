@@ -26,7 +26,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.example.pertemuan11.R
+import com.example.consumerestapi.R
 import com.example.praktikum12.model.Kontak
 import com.example.praktikum12.ui.home.Viewmodel.KontakUIState
 
