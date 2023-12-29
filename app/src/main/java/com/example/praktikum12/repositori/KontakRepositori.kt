@@ -7,7 +7,7 @@ import java.io.IOException
 import java.lang.Exception
 
 
-interface KontakRepository {
+interface KontakRepositori {
     suspend fun getKontak(): List<Kontak>
     suspend fun insertKontak(kontak: Kontak)
     suspend fun updateKontak(id: Int, kontak: Kontak)
@@ -17,7 +17,7 @@ interface KontakRepository {
 
 class NetworkKontakRepository(
     private val kontakApiService: KontakService
-) : KontakRepository {
+) : KontakRepositori {
     override suspend fun getKontak(): List<Kontak> =
         kontakApiService.getKontak()
 

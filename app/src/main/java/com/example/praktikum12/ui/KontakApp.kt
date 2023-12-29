@@ -19,15 +19,15 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.res.stringResource
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.consumerestapi.R
+import com.example.pakeapi.R
 import com.example.praktikum12.navigation.PengelolaHalaman
-import com.example.praktikum12.ui.home.Screen.HomeScreen
-import com.example.praktikum12.ui.home.Viewmodel.HomeViewModel
+import com.example.praktikum12.ui.home.viewmodel.HomeViewModel
+import com.example.praktikum12.ui.home.viewmodel.PenyediaViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun KontakApp(
-    homeViewModel: HomeViewModel = viewModel(factory = PenyediaViewModel.Factory)
+    HomeViewModel: HomeViewModel = viewModel(factory = PenyediaViewModel.Factory)
 
 ) {
     val scrollBehavior = TopAppBarDefaults.enterAlwaysScrollBehavior()

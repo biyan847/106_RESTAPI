@@ -1,4 +1,4 @@
-package com.example.praktikum12.ui.home.Screen
+package com.example.praktikum12.ui.home.screen
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -23,11 +23,11 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.praktikum12.navigation.DestinasiNavigasi
-import com.example.praktikum12.ui.PenyediaViewModel
+import com.example.praktikum12.ui.home.viewmodel.PenyediaViewModel
 import com.example.praktikum12.ui.TopAppBarKontak
-import com.example.praktikum12.ui.home.Viewmodel.InsertUiEvent
-import com.example.praktikum12.ui.home.Viewmodel.InsertUiState
-import com.example.praktikum12.ui.home.Viewmodel.InsertViewModel
+import com.example.praktikum12.ui.home.viewmodel.InsertUiEvent
+import com.example.praktikum12.ui.home.viewmodel.InsertUiState
+import com.example.praktikum12.ui.home.viewmodel.InsertViewModel
 import kotlinx.coroutines.launch
 
 

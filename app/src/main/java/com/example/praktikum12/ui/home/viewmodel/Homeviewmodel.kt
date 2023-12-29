@@ -1,4 +1,4 @@
-package com.example.praktikum12.ui.home.Viewmodel
+package com.example.praktikum12.ui.home.viewmodel
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -6,7 +6,7 @@ import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.praktikum12.model.Kontak
-import com.example.praktikum12.repositori.KontakRepository
+import com.example.praktikum12.repositori.KontakRepositori
 import kotlinx.coroutines.launch
 import retrofit2.HttpException
 import java.io.IOException
@@ -17,7 +17,7 @@ sealed class KontakUIState {
     object Loading : KontakUIState()
 }
 
-class HomeViewModel(private val kontakRepository: KontakRepository) : ViewModel() {
+class HomeViewModel(private val kontakRepository: KontakRepositori) : ViewModel() {
     var kontakUIState: KontakUIState by mutableStateOf(KontakUIState.Loading)
         private set
 

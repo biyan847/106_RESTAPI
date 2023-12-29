@@ -1,4 +1,4 @@
-package com.example.praktikum12.ui.home.Viewmodel
+package com.example.praktikum12.ui.home.viewmodel
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -6,10 +6,10 @@ import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.praktikum12.model.Kontak
-import com.example.praktikum12.repositori.KontakRepository
+import com.example.praktikum12.repositori.KontakRepositori
 import kotlinx.coroutines.launch
 
-class InsertViewModel(private val kontakRepository: KontakRepository) : ViewModel(){
+class InsertViewModel(private val kontakRepository: KontakRepositori) : ViewModel(){
     var insertKontakState by mutableStateOf(InsertUiState())
         private set
 

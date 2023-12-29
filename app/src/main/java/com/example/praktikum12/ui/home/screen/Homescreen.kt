@@ -1,4 +1,4 @@
-package com.example.praktikum12.ui.home.Screen
+package com.example.praktikum12.ui.home.screen
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
@@ -36,13 +36,13 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.consumerestapi.R
+import com.example.pakeapi.R
 import com.example.praktikum12.model.Kontak
 import com.example.praktikum12.navigation.DestinasiNavigasi
-import com.example.praktikum12.ui.PenyediaViewModel
+import com.example.praktikum12.ui.home.viewmodel.PenyediaViewModel
 import com.example.praktikum12.ui.TopAppBarKontak
-import com.example.praktikum12.ui.home.Viewmodel.HomeViewModel
-import com.example.praktikum12.ui.home.Viewmodel.KontakUIState
+import com.example.praktikum12.ui.home.viewmodel.HomeViewModel
+import com.example.praktikum12.ui.home.viewmodel.KontakUIState
 
 @Composable
 fun HomeStatus(
@@ -134,7 +134,7 @@ fun KontakLayout(
 fun KontakCard(
     kontak: Kontak,
     onDeleteClick: (Kontak) -> Unit = {},
-    modifier: Modifier = Modifier
+    modifier: Modifier
 ){
     Card(
         modifier = modifier,
